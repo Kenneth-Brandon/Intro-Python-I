@@ -2,10 +2,8 @@
 Python exposes a terse and intuitive syntax for performing 
 slicing on lists and strings. This makes it easy to reference
 only a portion of a list or string. 
-
 This Stack Overflow answer provides a brief but thorough
 overview: https://stackoverflow.com/a/509295
-
 Use Python's slice syntax to achieve the following:
 """
 
@@ -18,16 +16,17 @@ print(a[1])
 print(a[-2])
 
 # Output the last three elements in the array: [7, 9, 6]
-print(a[-3:])
+print(a[3:6])
 
 # Output the two middle elements in the array: [1, 7]
-print(a[2:4])
+print(a[-4:-2])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
-print(a[1:])
+print(a[-5:6])
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print(a[:-1])
+
+print(a[0:5])
 
 # For string s...
 

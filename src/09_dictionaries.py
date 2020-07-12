@@ -17,7 +17,7 @@ has the following keys:
 
 waypoints = [
     {
-        "lat": 42,
+        "lat": 43,
         "lon": -121,
         "name": "a place"
     },
@@ -35,7 +35,9 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-waypoints.append({"lat": 44, "lon": -101, "name": "oakland"})
+waypoints.append({"lat": 33.440360, "lon": -111.806580, "name": "home"})
+
+print(waypoints)
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
@@ -43,13 +45,8 @@ waypoints.append({"lat": 44, "lon": -101, "name": "oakland"})
 # waypoints list.
 
 # YOUR CODE HERE
-for waypoint in waypoints:
-    if waypoint["name"] == "a place":
-        waypoint["name"] = "not a real place"
-        waypoint["lon"] = -130
+waypoints[0]["lon"], waypoints[0]["name"] = -130, "not a real place"
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
-for (i, waypoint) in enumerate(waypoints):
-    for k, v in waypoint.items():
-        print(f"waypoint_{i+1}_{k}: {v}")
+[print(number.values()) for number in waypoints]
