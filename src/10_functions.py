@@ -1,6 +1,14 @@
 # Write a function is_even that will return true if the passed-in number is even.
 
-def is_even(num): return True if num % 2 == 0 else False
+def is_even(num):
+    print(num, 'num')
+    if (num % 2) == 0:
+        return True
+    else:
+        return False
+
+
+print(is_even(10))
 
 
 # Read a number from the keyboard
@@ -10,7 +18,7 @@ num = int(num)
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
 
-def is_even(num): return "Even" if num % 2 == 0 else "Odd"
-
-
-print(is_even(num))
+if (num % 2) == 0:
+    print(f"{num} is even")
+else:
+    print("{num} is odd")
