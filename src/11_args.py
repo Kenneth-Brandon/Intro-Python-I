@@ -41,16 +41,23 @@ print(f2(*a))    # Should print 22
 # # arguments. Google "python default arguments" for a hint.
 
 
-def f3(x, y=3):
-    if (x and y):
-        return x + y
-    else:
-        return x + 1
+# def f3(x, y=3):
+#     if (x and y):
+#         return x + y
+#     else:
+#         return x + 1
+
+
+def f3(a, b=0):
+    if a and b:
+        return a + b
+    elif a:
+        return a + 1
 # # YOUR CODE HERE
 
 
 print(f3(1, 2))  # Should print 3
-print(f3(6))     # Should print 9
+print(f3(8))     # Should print 9
 
 
 # # Write a function f4 that accepts an arbitrary number of keyword arguments and

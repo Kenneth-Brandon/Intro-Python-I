@@ -8,9 +8,9 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Print all the contents of the file, then close the file
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
-f = open('./foo.txt', 'r')
-print(f.read())
-f.close()
+with open("src/foo.txt", "r") as f:
+    text = f.read()
+    print(text)
 
 # YOUR CODE HERE
 
